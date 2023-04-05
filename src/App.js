@@ -36,7 +36,7 @@ let [progress,setprogress]=useState(0)
     return (
       <>
       
-       <Router>
+       <Router basename='/Newsapp'>
         <Navbar/>
         <LoadingBar
          color='#f11946'
