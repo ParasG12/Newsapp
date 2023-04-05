@@ -6,7 +6,7 @@ import React from 'react'
 import Navbar from './components/Navbar';
 import News   from './components/News';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
   // Link,
@@ -36,7 +36,7 @@ let [progress,setprogress]=useState(0)
     return (
       <>
       
-       <Router  basename='newsapp'>
+       <Router  >
         <Navbar/>
         <LoadingBar
          color='#f11946'
