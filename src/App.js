@@ -6,7 +6,7 @@ import React from 'react'
 import Navbar from './components/Navbar';
 import News   from './components/News';
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Routes,
   Route,
   // Link,
@@ -36,7 +36,7 @@ let [progress,setprogress]=useState(0)
     return (
       <>
       
-       <Router >
+       <Router  basename='newsapp'>
         <Navbar/>
         <LoadingBar
          color='#f11946'
@@ -57,7 +57,16 @@ let [progress,setprogress]=useState(0)
        
        </Routes>
        </Router>
-     
+       {/* <Navbar/>
+        <LoadingBar
+         color='#f11946'
+          progress={progress}
+         height={3}
+        
+        
+      />
+       <News      setProgress={setProgress} key="general"pageSize={pagesize} country = "in" category="general"/>
+      */}
        </>
         
       
